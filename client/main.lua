@@ -190,7 +190,7 @@ end
 local function onEnterCallZone()
     if whitelistedVehicle() and not isInsidePickupZone and not NpcData.NpcTaken then
         isInsidePickupZone = true
-        lib.showTextUI(Lang:t('info.call_npc'), {position = 'left-center'})
+        lib.showTextUI(Lang:t('info.call_npc'), {position = 'right-center'})
         callNpcPoly()
     end
 end
@@ -277,7 +277,7 @@ end
 local function onEnterDropZone()
     if whitelistedVehicle() and not isInsideDropZone and NpcData.NpcTaken then
         isInsideDropZone = true
-        lib.showTextUI(Lang:t('info.drop_off_npc'), {position = 'left-center'})
+        lib.showTextUI(Lang:t('info.drop_off_npc'), {position = 'right-center'})
         dropNpcPoly()
     end
 end
